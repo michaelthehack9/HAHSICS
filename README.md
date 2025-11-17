@@ -21,7 +21,7 @@ Also make sure you either have a VPN or you are disconnected from the schools ne
 
 ## Android
 
-Download Termux on the play store theb type the following commands.
+Download Termux on the play store then type the following commands.
 Also make sure you either have a VPN or you are disconnected from the schools network.
 
 1. pkg install git
