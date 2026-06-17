@@ -24,6 +24,9 @@ chmod +x HAHSICS/ICSapple
 # Make script a command
 mv HAHSICS/ICSapple /usr/local/bin/ICS
 
+# Move key to etc
+mv ICSkey.txt /etc/ICSkey.txt
+
 # Change startup text
 echo "Welcome to iSH! To open the client please type ICS\n" | tee /etc/motd
 
