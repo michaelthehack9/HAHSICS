@@ -12,7 +12,7 @@ if [ "$need_api" == "y" ]; then
   echo -n "Enter your API key: "
   read api_key
 
-  echo "$api_key" > ICSkey.txt
+  echo "$api_key" > key.txt
   echo "✅ API key saved to ICSkey.txt"
 else
   echo "✅ Using existing API key from ICSkey.txt"
@@ -23,9 +23,6 @@ chmod +x HAHSICS/ICSapple
 
 # Make script a command
 mv HAHSICS/ICSapple /usr/local/bin/ICS
-
-# Move key to command
-mv ICSkey.txt /usr/local/bin
 
 # Change startup text
 echo "Welcome to iSH! To open the client please type ICS\n" | tee /etc/motd
