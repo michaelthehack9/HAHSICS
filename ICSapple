@@ -1,10 +1,10 @@
 #!/bin/sh
 
 # ===== Configuration =====
-if [ -f key.txt ]; then
-  SNIPEIT_API_KEY=$(cat key.txt)
+if [ -f /etc/ICSkey.txt ]; then
+  SNIPEIT_API_KEY=$(cat /etc/ICSkey.txt)
 else
-  echo "❌ Error: key.txt not found. Please create it with your API key."
+  echo "❌ Error: /etc/ICSkey.txt not found. Please create it with your API key."
   exit 1
 fi
 
