@@ -12,7 +12,7 @@ if [ "$need_api" == "y" ]; then
   echo -n "Enter your API key: "
   read api_key
 
-  echo "$api_key" > key.txt
+  echo "$api_key" > ICSkey.txt
   echo "✅ API key saved to ICSkey.txt"
 else
   echo "✅ Using existing API key from ICSkey.txt"
